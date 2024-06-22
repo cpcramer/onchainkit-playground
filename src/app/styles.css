@@ -1,33 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
+/* The base layer is for things like reset rules or default styles applied to plain HTML elements. */
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --font-weight: 400;
+    /* background: radial-gradient(circle at 50% 50%, #0052ff 80%, #FFF 120%); */
+    background: linear-gradient(342deg, rgba(0,0,0,1) 0%, rgba(67,56,202,1) 100%);
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: var(--font-weight, 400); 
+    line-height: 1.6px; 
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* The components layer is for class-based styles that you want to be able to override with utilities. */
+
+@layer components {
+  .my-custom-style {
+    
+  }
 }
 
+/* The utilities layer is for small, single-purpose classes that should always take precedence over any other styles. */
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  
+}
+
+@media (max-width: 768px) {
+
+}
+
+#home-text{
+  /* font-size: 50px; */
+  font-family: "system-ui";
+  font-weight:  400;
+
+}
+
+.css-blurry-gradient {
+  background: radial-gradient(circle at 50% 50%, #0070ba, #003a5b);
+}
+
+.dark .css-blurry-gradient {
+  background: radial-gradient(circle at 50% 50%, #b2fdff, rgba(0, 162, 255, 0));
+  opacity: 0.2;
 }
