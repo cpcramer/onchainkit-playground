@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-/* @import '@coinbase/onchainkit/styles.css';  import '@coinbase/onchainkit/styles.css';*/
 
 /* The base layer is for things like reset rules or default styles applied to plain HTML elements. */
 @layer base {
@@ -15,7 +15,7 @@
     --text-success: theme(colors.lime.600);
     --text-warning: theme(colors.orange.600);
     --text-disabled: theme(colors.gray.400);
- 
+
     --bg-default: theme(colors.gray.50);
     --bg-default-hover: theme(colors.gray.200);
     --bg-default-active: theme(colors.gray.300);
@@ -40,29 +40,27 @@
     font-weight: var(--font-weight, 400); 
   }
 
-
+  body {
+    font-family: 'DM Sans', sans-serif;
+  }
 }
 
 /* The components layer is for class-based styles that you want to be able to override with utilities. */
-
 @layer components {
-  .my-custom-style {
-    
+  .custom-swap-component {
   }
 }
 
 /* The utilities layer is for small, single-purpose classes that should always take precedence over any other styles. */
 @layer utilities {
-  
+  /* Custom utility classes */
 }
 
 @media (max-width: 768px) {
-
+  /* Mobile specific styles */
 }
 
-#main-text{
-  /* font-size: 50px; */
-  font-family: "system-ui";
-  font-weight:  400;
-
+#main-text {
+  font-family: 'system-ui';
+  font-weight: 400;
 }

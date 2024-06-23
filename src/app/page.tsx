@@ -15,10 +15,12 @@ export default function Home() {
           < AccountConnect />
         </div>
       </header>
-      <div className="flex justify-center items-center p-6 border border-white min-h-[80vh]">
+      <div className="flex justify-center items-center p-2 border border-white min-h-[80vh]">
         <div className="flex flex-col items-center justify-center">
           <Title />
-          <Swap />
+          <div className="">
+            <Swap />
+          </div>
         </div>
       </div>
     </main>

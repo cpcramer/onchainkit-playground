@@ -1,26 +1,19 @@
-import path from 'node:path'; 
-import type { Config } from "tailwindcss";
+import path from 'node:path';
 
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    path.join(path.dirname(require.resolve('@coinbase/onchainkit')), '**/*.js'), 
+    './src/**/*.{ts,tsx}',
+    path.join(path.dirname(require.resolve('@coinbase/onchainkit')), '**/*.js'),
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      screens: {
-        md: '848px',
-      },
-      fontFamily: {
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+    },
+    extend: {  
+      fontFamily: {  
         display: 'DM Sans, sans-serif',
-      },
+      },  
       fill: {  
         default: 'var(--bg-default)',  
         alternate: 'var(--bg-alternate)',  
@@ -61,8 +54,7 @@ const config: Config = {
         warning: 'var(--bg-warning)',  
         success: 'var(--bg-success)',  
       }, 
-    },
+    }, 
   },
   plugins: [],
 };
-export default config;

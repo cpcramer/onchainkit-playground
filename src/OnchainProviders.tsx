@@ -17,7 +17,8 @@ function OnchainProviders({ children }: Props) {
     <WagmiProvider config={wagmiConfig}>
       <QueryClientProvider client={queryClient}>
         <OnchainKitProvider
-          apiKey={process.env.CDP_API_KEY}
+        //   apiKey={process.env.CDP_API_KEY}
+        apiKey='KkgONfLFgUZKI8nnrttLbI78U2vyhtXg'
           chain={base}
         >
           {children}
