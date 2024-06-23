@@ -1,7 +1,7 @@
 
-import Title from "../components/Title"
-import Swap from "../components/Swap"
-import AccountConnect from "@/components/AccountConnect";
+import Title from "@/components/Title"
+import Swap from "@/components/Swap"
+// import AccountConnect from "@/components/AccountConnect";
 
 export default function Home() {
   return (
