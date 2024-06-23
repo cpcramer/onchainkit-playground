@@ -20,9 +20,9 @@
     regenerator-runtime "^0.14.0"
 
 "@coinbase/onchainkit@^0.22.1":
-  version "0.22.1"
-  resolved "https://registry.yarnpkg.com/@coinbase/onchainkit/-/onchainkit-0.22.1.tgz#59194617a664e40218bc9b8803a371e8441dc985"
-  integrity sha512-NqWqOTNVEjD2jP394lpSfwpuTFQKHqiMlHjKWrAcHMurKh9uuLzR+hrJSzIck0Z5D70L4oq2+leDV/RfEUt4hw==
+  version "0.22.2"
+  resolved "https://registry.yarnpkg.com/@coinbase/onchainkit/-/onchainkit-0.22.2.tgz#097fabb3d0166e577bd15b469bf9c2649ee4f2e6"
+  integrity sha512-yOMvJv68rwR9rNqBdFdvlKmoOwK46aE5MMV37doxjFn5YR68QpKsnWn8rfm94IPCNo3sTVtWP+U2cB76qNy6/w==
   dependencies:
     "@tanstack/react-query" "^5"
     clsx "^2.1.1"
@@ -4986,7 +4986,7 @@ viem@^1.0.0, viem@^1.1.4:
     isows "1.0.3"
     ws "8.13.0"
 
-viem@^2.13.8:
+viem@^2.13.8, viem@^2.16.1:
   version "2.16.1"
   resolved "https://registry.yarnpkg.com/viem/-/viem-2.16.1.tgz#6be85ab69e2948d878d7b42f5d0e22333a8f6b33"
   integrity sha512-rmgXcxif740m2ARqPFoiXRHkljXhsruCZgRXf6XuS6n+Lymy7X2ma5vuzBw3mDKiA2BmxjbyJC4Wxi7kaIwHhw==
@@ -5000,7 +5000,7 @@ viem@^2.13.8:
     isows "1.0.4"
     ws "8.17.1"
 
-wagmi@^2.9.11:
+wagmi@^2.10.4, wagmi@^2.9.11:
   version "2.10.4"
   resolved "https://registry.yarnpkg.com/wagmi/-/wagmi-2.10.4.tgz#0df1b19bc78a660a14add7f8b7175ece52511b58"
   integrity sha512-FrQ9a2EgGohnk8v1mTHUAqdBv1EHVWGy/lxezqdJaH2oF062sz2TWlWjbbFCxvd+obrrIPcEjIaOpvJMVt0nRg==
