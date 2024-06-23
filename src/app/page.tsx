@@ -12,7 +12,7 @@ export default function Home() {
           Connect Wallet
         </a>
       </header>
-      <div className="flex justify-center items-center border border-white min-h-[80vh]">
+      <div className="flex justify-center items-center p-6 border border-white min-h-[80vh]">
         <div className="flex flex-col items-center justify-center">
           <Title />
           <Swap />
