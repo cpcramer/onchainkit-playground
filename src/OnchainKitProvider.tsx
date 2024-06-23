@@ -7,7 +7,7 @@ type Props = { children: ReactNode };
  
 function OnchainProviders({ children }: Props) {
   return (
-    <OnchainKitProvider apiKey="YOUR_PUBLIC_API_KEY" chain={base}>
+    <OnchainKitProvider apiKey={process.env.CDP_API_KEY} chain={base}>
       <YourKit />
     </OnchainKitProvider>
   );

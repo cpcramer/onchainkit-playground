@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
+/* @import '@coinbase/onchainkit/styles.css';  import '@coinbase/onchainkit/styles.css';*/
 
 /* The base layer is for things like reset rules or default styles applied to plain HTML elements. */
 @layer base {
