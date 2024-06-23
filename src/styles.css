@@ -11,15 +11,11 @@
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
     --font-weight: 400;
-    /* background: radial-gradient(circle at 50% 50%, #0052ff 80%, #FFF 120%); */
+    --blurry-gradient: linear-gradient(342deg, rgba(0,0,0,1) 0%, rgba(67,56,202,1) 100%);
     background: linear-gradient(342deg, rgba(0,0,0,1) 0%, rgba(67,56,202,1) 100%);
     color: #FFF;
-    text-align: center;
-    font-family: "DM Sans";
     font-size: 28px;
-    font-style: normal;
     font-weight: var(--font-weight, 400); 
-    line-height: 1.6px; 
   }
 }
 
@@ -40,18 +36,9 @@
 
 }
 
-#home-text{
+#main-text{
   /* font-size: 50px; */
   font-family: "system-ui";
   font-weight:  400;
 
-}
-
-.css-blurry-gradient {
-  background: radial-gradient(circle at 50% 50%, #0070ba, #003a5b);
-}
-
-.dark .css-blurry-gradient {
-  background: radial-gradient(circle at 50% 50%, #b2fdff, rgba(0, 162, 255, 0));
-  opacity: 0.2;
 }

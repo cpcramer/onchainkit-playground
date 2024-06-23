@@ -1,8 +1,15 @@
+import Title from "../pages/Title";
+import ConnectWallet from "../pages/ConnectWallet";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-10">
-      <div id="home-text" className="z-10 items-center justify-between text-3xl lg:flex">
-        Swap Meme Coins on Base!
+    <main
+      id="main-text"
+      className="flex justify-center p-6 border border-white"
+    >
+      <div className="flex-col">
+        <Title/>
+        <ConnectWallet />
       </div>
     </main>
   );
