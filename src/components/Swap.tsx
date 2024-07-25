@@ -1,4 +1,3 @@
-import { useCallback } from "react";
 import { ConnectWallet } from "@coinbase/onchainkit/wallet";
 import {
   Swap,
@@ -7,16 +6,11 @@ import {
   SwapButton,
   SwapMessage,
 } from "@coinbase/onchainkit/swap";
-import { useAccount, useSendTransaction } from "wagmi";
-import type {
-  BuildSwapTransaction,
-  SwapError,
-} from "@coinbase/onchainkit/swap";
+import { useAccount } from "wagmi";
 import type { Token } from "@coinbase/onchainkit/token";
 
 export default function SwapComponents() {
   const { address } = useAccount();
-  const { sendTransaction } = useSendTransaction();
 
   const MochiToken: Token = {
     address: "0xF6e932Ca12afa26665dC4dDE7e27be02A7c02e50",
@@ -37,24 +31,6 @@ export default function SwapComponents() {
   };
 
   const swappableTokens: Token[] = [MochiToken, USDCToken];
-
-  const onSubmit = useCallback(
-    async (swapTransaction: BuildSwapTransaction) => {
-      const { transaction } = swapTransaction;
-      console.log("Prepared swapTransaction:", transaction);
-      try {
-        const result = await sendTransaction({
-          to: transaction.to,
-          value: transaction.value,
-          data: transaction.data,
-        });
-        console.log("Transaction result:", result);
-      } catch (error) {
-        console.error("Transaction error:", error);
-      }
-    },
-    [sendTransaction]
-  );
 
   return (
     <div className="">
