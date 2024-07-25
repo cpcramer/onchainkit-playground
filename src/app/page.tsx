@@ -2,6 +2,7 @@
 import Title from "@/components/Title"
 import Swap from "@/components/Swap"
 import AccountConnect from "@/components/AccountConnect";
+import Transaction from "@/components/Transaction";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
           <Title />
           <div className="">
             <Swap />
+          </div>
+          <div>
+            <Transaction />
           </div>
         </div>
       </div>
