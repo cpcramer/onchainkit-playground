@@ -1,5 +1,5 @@
 import { Avatar } from '@coinbase/onchainkit/identity';
-import { ConnectAccount } from '@coinbase/onchainkit/wallet'; 
+import { ConnectWallet } from '@coinbase/onchainkit/wallet'; 
 import { useAccount, useDisconnect } from 'wagmi';
 
 export default function AccountConnect() {
@@ -13,7 +13,7 @@ export default function AccountConnect() {
         if (status === 'disconnected') {
           return (
           <div className="">
-            <ConnectAccount />
+            <ConnectWallet />
           </div>
           )
         }

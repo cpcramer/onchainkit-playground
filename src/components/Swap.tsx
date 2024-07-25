@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { ConnectAccount } from "@coinbase/onchainkit/wallet";
+import { ConnectWallet } from "@coinbase/onchainkit/wallet";
 import {
   Swap,
   SwapAmountInput,
@@ -74,12 +74,12 @@ export default function SwapComponents() {
               token={USDCToken}
               type="to"
             />
-            <SwapButton onSubmit={onSubmit} />
+            <SwapButton/>
             <SwapMessage />
           </Swap>
         </div>
       ) : (
-        <ConnectAccount />
+        <ConnectWallet />
       )}
     </div>
   );
