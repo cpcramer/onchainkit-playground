@@ -33,9 +33,17 @@ export default function TransactionComponents() {
         args: [address],
       }
     ];
-   
+   let url = process.env.PAYMASTER_PROD_URL
+  if (url === undefined) { 
+    throw new Error('PAYMASTER_PROD_URL is not defined');
+  }
     return address ? (
-      <Transaction address={address} contracts={contracts}>
+      <Transaction address={address} contracts={contracts}
+      capabilities={{ 
+        paymasterService: { 
+          url: url, 
+        }, 
+      }}>
         <TransactionButton />
         <TransactionStatus>
           <TransactionStatusLabel />
