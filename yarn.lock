@@ -26,10 +26,10 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@coinbase/onchainkit@^0.26.14":
-  version "0.26.14"
-  resolved "https://registry.yarnpkg.com/@coinbase/onchainkit/-/onchainkit-0.26.14.tgz#d7464ea298d9a83487cd5e3b354ed136f1294b16"
-  integrity sha512-nHkBa9ZWguk/7FukrUt8g40nwHW7lvOG9NXA22QDIqzRvL+65PIyi2654dR3+4OdmJZ6orhRyDkNAI+4g9Ob/w==
+"@coinbase/onchainkit@^0.29.1":
+  version "0.29.1"
+  resolved "https://registry.yarnpkg.com/@coinbase/onchainkit/-/onchainkit-0.29.1.tgz#d29367e72ed4d60bef18fc55ff18e2e476d99ee7"
+  integrity sha512-1recG1fM4WYIFB4PLaGx8f0twYtRxKQpEJcdelKj9A+Z8vzlWyvy6ahTIdXUlJLGpIYmTmXAe3NZptuWH18k4A==
   dependencies:
     "@rainbow-me/rainbowkit" "^2.1.3"
     "@tanstack/react-query" "^5"
